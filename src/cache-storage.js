@@ -137,5 +137,5 @@ class CacheStorage {
 module.exports = {
   Cache,
   CacheStorage,
-  caches: new CacheStorage()
+  caches: window.caches || new CacheStorage(),
 }
